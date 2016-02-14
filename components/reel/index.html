@@ -1,8 +1,14 @@
-<h2>{ reelTitle }</h2>
+<h2>{ title }</h2>
 
-<poster each="{ RukusApp.movies }"></poster>
+<poster each="{ content }"></poster>
 
 <style>
+  reel {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
   reel h2 {
     text-transform: uppercase;
   }
