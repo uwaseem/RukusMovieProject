@@ -10,11 +10,12 @@
  * -------------------------------------------------- */
  // This is a rukus app.
 RukusApp.version = '1.0.0';
-RukusApp.movies = require('./controllers/movies.js');
-
+RukusApp.movies = require('./controllers/movies');
+RukusApp.ui = require('./controllers/ui');
 
 // Mount everything !
 riot.mount('*');
+require('./routes')();
 require("file?name=index.html!./index.html");
 
 // enjoy.
