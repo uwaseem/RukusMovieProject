@@ -18,6 +18,7 @@
     "riot": "^2.3.15",
     "rukus": "^1.2.2",
     "rukus-loader": "^1.1.0",
+    "rukus-signal": "^1.1.0",
     "webpack": "^1.12.13"
   },
   "devDependencies": {

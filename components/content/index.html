@@ -1,1 +1,5 @@
-<reel each='{ RukusApp.movies }'></reel>
+<!-- <reel each='{ RukusApp.movies }'></reel> -->
+<home if='{ state.page === "home" }'></home>
+<loading if='{ state.page === "loading" }'></loading>
+<show if='{ state.page === "show" }'></show>
+<error if='{ state.page === "404" }'></error>

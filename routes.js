@@ -3,9 +3,9 @@ let page = require('page');
 
 module.exports = function(opts) {
   let routes = [
-    ['/pisang', RukusApp.party({page: 'pisang'})],
-    ['/banana', RukusApp.party({page: 'banana'})],
-    ['*', RukusApp.party({page: '404'})]
+    ['/', RukusApp.ui.route({page: 'home'})],
+    ['/show/:id', RukusApp.ui.route({page: 'show'})],
+    ['*', RukusApp.ui.route({page: '404'})]
   ];
 
   routes.forEach(function(route) {
